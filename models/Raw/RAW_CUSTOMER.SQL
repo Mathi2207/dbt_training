@@ -1,7 +1,1 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
-
-select * from RAW.DBT.CUSTOMERS
+SELECT * FROM {{ source('DBT', 'customers') }}

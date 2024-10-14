@@ -1,0 +1,10 @@
+version: 2
+
+sources: 
+  - name: DBT
+    database: RAW
+    schema: DBT
+    tables: 
+      - name: customers
+      - name: orders
+      - name: product
